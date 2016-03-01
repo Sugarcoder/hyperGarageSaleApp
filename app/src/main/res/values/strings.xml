@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">hyperGarageSale</string>
+    <string name="action_settings">Settings</string>
+    <string name="new_post_snackbar">Thanks for posting!</string>
+    <string name="title_activity_browse_post">browsePostActivity</string>
+
+    <string name="title_hint">Enter title of the item</string>
+    <string name="price_hint">Enter price of the item</string>
+    <string name="desc_hint">Enter description of the item</string>
+    <string name="button_post">Post</string>
+
+
+</resources>
