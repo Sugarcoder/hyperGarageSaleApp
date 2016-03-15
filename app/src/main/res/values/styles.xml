@@ -14,4 +14,8 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="AppBarOverlay"></style>
+
+    <style name="PopupOverlay"></style>
+
 </resources>

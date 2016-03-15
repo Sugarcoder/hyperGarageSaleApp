@@ -10,70 +10,77 @@
 
 <!-- Here are the existing layout elements, now wrapped in a CoordinatorLayout -->
 
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post"
+            android:id="@+id/postId"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="95dp"
+            android:layout_marginLeft="95dp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <!-- android:layout_toEndOf="@+id/toolTitleId"
+            android:layout_marginStart="95dp"-->
+
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".newPostActivity">
-
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/my_toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-
-            android:background="?attr/colorPrimary"
-            android:elevation="4dp"
-            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".newPostActivity"
+        android:backgroundTint="#d1d1d1">
 
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/title_hint"
-            android:layout_below="@+id/my_toolbar"
-            android:layout_alignParentTop="true"
+            android:text="@string/title_hint"
+            android:layout_alignBottom="@+id/desc_hint"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:text="@string/title_hint" />
+            android:layout_marginBottom="50dp" />
+
+
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/price_hint"
-            android:layout_below="@+id/title_hint"
-            android:layout_alignLeft="@+id/title_hint"
-            android:layout_alignStart="@+id/title_hint"
-            android:layout_alignRight="@+id/title_hint"
-            android:layout_alignEnd="@+id/title_hint"
-            android:text="@string/price_hint" />
+            android:text="@string/price_hint"
+            android:layout_below="@+id/desc_hint"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/desc_hint"
-            android:layout_below="@+id/price_hint"
-            android:layout_alignLeft="@+id/price_hint"
-            android:layout_alignStart="@+id/price_hint"
-            android:layout_alignRight="@+id/price_hint"
-            android:layout_alignEnd="@+id/price_hint"
-            android:text="@string/desc_hint" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/button_post"
-            android:id="@+id/postButton"
-            android:onClick="newPostAdded"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:text="@string/desc_hint"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="186dp" />
 
 
     </RelativeLayout>
 
+
 </android.support.design.widget.CoordinatorLayout>
+
